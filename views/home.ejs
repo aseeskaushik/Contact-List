@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home.css">
+    <script
+    src="https://kit.fontawesome.com/5cd660f527.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>
+        <%=title%>
+    </title>
+</head>
+<body>
+    <div  id="main-heading">
+      <span>Contact List</span>
+    </div>
+    <div>
+        <ul>
+            <%for(let i of contact_list){%>
+              <li>
+                <p><%= i.name %></p>
+                <p><%= i.contactno %></p>
+                <p><a href="/delete-contact/?id=<%=i.id%>"><i class="fas fa-window-close"></i></a></p>
+              </li>    
+            <%}%>
+        </ul>
+    </div>
+    <div>
+    <form action="/create-contact" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="text" name="contactno" placeholder="Enter Contact no." required>
+        <button type="submit">Add Contact</button>
+    </form>
+    </div>
+
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>

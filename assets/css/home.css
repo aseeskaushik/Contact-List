@@ -1,0 +1,87 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: url('../images/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-heading{
+    color: white;
+    background-color: rgba(0, 32, 91, 0.6);
+    height: 4rem;
+    width: 100vw;
+    font-size:2.1rem ;
+    text-align: center;
+    padding-top: 0.8rem;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    word-spacing: 0.4rem;
+    line-height: 3rem;
+    transform: scaleY(1.2);
+    margin-bottom: 5rem;
+}
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 40vw;
+    /* border: 2px solid blue; */
+    list-style: none;
+    margin: 10px;
+    background-color: rgba(250, 240, 230, 0.4);
+    border-radius: 8px;
+    transform: scaleY(1.2);
+}
+/* form{
+    width: 40vw;
+    
+} */
+button{
+    background:none;           
+    color: white;
+    height: 3.5rem;
+    width: 9rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    font-size: 1.05rem;
+    box-shadow: 0 0 5px lightgray;
+    text-shadow: 0 0 5px lightblue;
+    letter-spacing: 1.5px;
+    margin-left: 0.5rem;
+}
+li:hover{
+    text-size-adjust: 2rem;
+    transition: all 0.05s;
+    color: #00205b;
+    background-color: rgba(250, 240, 230, 0.6);
+    box-shadow: 0 0 5px lightgrey;
+    border: 1px solid #00205b;
+    margin:0px;
+}
+button:hover{
+    /* opacity: 5%; */
+    border: 1px solid midnightblue;
+    color: #00205b;
+}
+input{
+    height: 3rem;
+    width: 9rem;
+    background: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 5px lightblue;
+    margin-right: 0.5px;
+}
+::placeholder{
+    text-decoration: none;
+    color:lightgray;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    /* text-shadow: 0 0 5px lightblue; */
+}
